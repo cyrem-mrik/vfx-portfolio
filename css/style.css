@@ -297,7 +297,7 @@ header.scrolled .nav-link {
 .projects-gallery {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
   gap: 0.5rem;
   height: auto;
   overflow: hidden;
@@ -906,6 +906,7 @@ footer {
   .hero-subtitle {
     font-size: 1.1rem;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -941,6 +942,10 @@ footer {
   .section-title {
     font-size: 1.8rem;
   }
+
+    .project-role {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -955,4 +960,9 @@ footer {
   .about-title {
     font-size: 1.4rem;
   }
+  .project-role {
+    font-size: 1.8rem;
+  }
+
+
 }

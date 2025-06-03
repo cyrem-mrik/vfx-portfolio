@@ -952,12 +952,12 @@ footer {
     font-size: 1.8rem;
   }
 
-    .project-role {
+    /* .project-role {
     font-size: 1.8rem;
   }
   .projects-gallery {
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -972,10 +972,10 @@ footer {
   .about-title {
     font-size: 1.4rem;
   }
-  .project-role {
+  /* .project-role {
     font-size: 1.8rem;
   }
   .projects-gallery {
-  grid-template-columns: repeat(auto-fill, minmax(130px, 150px));
-  }
+  grid-template-columns: repeat(auto-fill, minmax(120px, 150px));
+  } */
 }

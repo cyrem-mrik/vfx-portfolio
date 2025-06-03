@@ -909,10 +909,10 @@ footer {
 
   /* .project-role {
   font-size: 1.9rem;
-  }
+  }*/
   .projects-gallery {
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  } */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 160px));
+  } 
 
 
 
@@ -954,9 +954,9 @@ footer {
 
     /* .project-role {
     font-size: 1.8rem;
-  }
-  .projects-gallery {
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }*/
+  /* .projects-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 160px));
   } */
 }
 
@@ -974,8 +974,10 @@ footer {
   }
   /* .project-role {
     font-size: 1.8rem;
-  }
-  .projects-gallery {
-  grid-template-columns: repeat(auto-fill, minmax(120px, 150px));
+  } */
+  
+
+  /* .projects-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 160px));
   } */
 }

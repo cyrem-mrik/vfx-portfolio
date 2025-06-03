@@ -943,9 +943,9 @@ footer {
     font-size: 1.8rem;
   }
 
-    .project-role {
+    /* .project-role {
     font-size: 1.8rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 576px) {
@@ -960,9 +960,9 @@ footer {
   .about-title {
     font-size: 1.4rem;
   }
-  .project-role {
+  /* .project-role {
     font-size: 1.8rem;
-  }
+  } */
 
 
 }

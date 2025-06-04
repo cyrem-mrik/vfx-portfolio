@@ -972,12 +972,27 @@ footer {
   .about-title {
     font-size: 1.4rem;
   }
-  /* .project-role {
-    font-size: 1.8rem;
-  } */
+  .project-role {
+    font-size: 1.6rem;
+  }
   
+  .project-title {
+    font-size: 1.4rem;
+  }
 
-  /* .projects-gallery {
-  grid-template-columns: repeat(auto-fill, minmax(150px, 160px));
-  } */
+  .project-category {
+    font-size: 0.7rem;
+  }
+
+  .project-info {
+    font-size: 0.4rem;
+  }
+
+  .projects-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+
+
+
 }

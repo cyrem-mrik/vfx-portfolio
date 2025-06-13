@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aymeric Perceval | Visual Effects Supervisor</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500&family=Bebas+Neue&family=Major+Mono+Display:wght@400&display=swap;"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/324c1a775b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body style="overflow: auto">
     <!-- Header -->
@@ -72,12 +76,27 @@
     <section id="projects" class="projects section">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="projects-gallery">
-          <div class="project-item-role">
-            <h2 class="project-role">as Visual Effects Supervisor</h2>
-          </div>
 
-          <div class="project-item">
+        <!-- Control buttons -->
+        <div id="myBtnContainer" class="filter-container">
+          <button class="filter-btn active" data-filter="all">All Roles</button>|
+          <button class="filter-btn" data-filter="vsup">VFX Supervisor</button>|
+          <button class="filter-btn" data-filter="xsup">
+            Additional Supervisor
+          </button>|
+          <button class="filter-btn" data-filter="csup">
+            Compositing Supervisor
+          </button>|
+          <button class="filter-btn" data-filter="comp">
+            Compositor
+          </button>|
+          <button class="filter-btn" data-filter="onset">
+            On Set
+          </button>
+        </div>
+
+        <div class="projects-gallery">
+          <div class="project-item vsup onset">
             <img
               src="images/PROJECTS/HPBM_HarryPotterAndTheBattleAtTheMinistry/HPBM_Poster1.jpg"
               alt="Harry Potter And The Battle At The Ministry"
@@ -92,7 +111,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/EXTP_Extrapolations/EXTP_Poster1.jpg"
               alt="Extrapolations"
@@ -105,7 +124,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/TRST_TrueStory/TRST_Poster2.jpg"
               alt="True Story"
@@ -118,7 +137,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/FINC_Finch/FINC_Poster1.jpg"
               alt="Finch"
@@ -131,7 +150,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/TRNG_TheTurning/TRNG_Poster1.jpg"
               alt="The Turning"
@@ -144,7 +163,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/STGL_Stargirl/STGL_Poster2.jpg"
               alt="Stargirl"
@@ -157,7 +176,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup onset">
             <img
               src="images/PROJECTS/BCAM_BodyCam/BCAM_Poster1.jpg"
               alt="Body Cam"
@@ -170,7 +189,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/PRED_ThePredator/PRED_Poster2.jpg"
               alt="The Predator"
@@ -183,7 +202,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/CLNY_Colony/CLNY_Poster1.jpg"
               alt="Colony Season 3"
@@ -196,12 +215,12 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup xsup">
             <img
               src="images/PROJECTS/JRYN_JackRyan/JRYN_Poster1.jpg"
               alt="Jack Ryan Season 1"
               class="project-image"
-              style="scale: 105%; transform: translateY(5px);"
+              style="scale: 105%; transform: translateY(5px)"
             />
             <div class="project-overlay project-btn" data-project="JRYN">
               <h3 class="project-title">Jack Ryan</h3>
@@ -210,7 +229,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/LIS1_LostInSpace/LIS1_Poster1.jpg"
               alt="Lost In Space Season 1"
@@ -223,7 +242,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup onset">
             <img
               src="images/PROJECTS/AGOD_AmericanGods/AGOD_Poster2.jpg"
               alt="American Gods Season 1"
@@ -236,7 +255,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item vsup">
             <img
               src="images/PROJECTS/MAGG_Maggie/MAGG_Poster3.jpg"
               alt="Maggie"
@@ -249,11 +268,7 @@
             </div>
           </div>
 
-          <div class="project-item-role">
-            <h2 class="project-role">as Additional Supervisor</h2>
-          </div>
-
-          <div class="project-item" hidden>
+          <div class="project-item xsup" hidden>
             <img
               src="images/PROJECTS/CBOP_CowboyBebop/CBOP_Poster2.jpg"
               alt="Cowboy Bebop"
@@ -266,7 +281,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item xsup">
             <img
               src="images/PROJECTS/ID2R_IndependenceDayResurgence/ID2R_Poster1.jpg"
               alt="Independence Day: Resurgence"
@@ -279,7 +294,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item xsup onset">
             <img
               src="images/PROJECTS/NYSM_NowYouSeeMe2/NYSM_Poster1.jpg"
               alt="Now You See Me 2"
@@ -292,11 +307,7 @@
             </div>
           </div>
 
-          <div class="project-item-role">
-            <h2 class="project-role">as Compositing Supervisor</h2>
-          </div>
-
-          <div class="project-item">
+          <div class="project-item csup onset">
             <img
               src="images/PROJECTS/GOEG_GodsOfEgypt/GOEG_Poster3.jpg"
               alt="Gods Of Egypt"
@@ -309,7 +320,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item csup">
             <img
               src="images/PROJECTS/ANTM_AntMan/ANTM_Poster1.jpg"
               alt="Ant-Man"
@@ -323,7 +334,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item csup">
             <img
               src="images/PROJECTS/HERC_Hercules/HERC_Poster3.jpg"
               alt="Hercules"
@@ -337,7 +348,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item csup">
             <img
               src="images/PROJECTS/RBCP_Robocop/RBCP_Poster2.jpg"
               alt="Robocop"
@@ -351,7 +362,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item csup">
             <img
               src="images/PROJECTS/EOTO_EdgeOfTomorrow/EOTO_Poster3.jpg"
               alt="Edge Of Tomorrow"
@@ -364,11 +375,7 @@
             </div>
           </div>
 
-          <div class="project-item-role">
-            <h2 class="project-role">as Lead Compositor</h2>
-          </div>
-
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/300R_300RiseOfAnEmpire/300R_Poster1.jpg"
               alt="300: Rise Of An Empire"
@@ -382,11 +389,7 @@
             </div>
           </div>
 
-          <div class="project-item-role">
-            <h2 class="project-role">as Compositor</h2>
-          </div>
-
-          <div class="project-item">
+          <div class="project-item comp onset">
             <img
               src="images/PROJECTS/PPAZ_PrideAndPrejudiceAndZombies/PPAZ_Poster2.jpg"
               alt="Pride And Prejudice And Zombies"
@@ -400,7 +403,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/REVN_TheRevenant/REVN_Poster1.jpg"
               alt="The Revenant"
@@ -413,7 +416,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/XDFP_XMenDaysOfFuturePast/XDFP_Poster1.jpg"
               alt="X-Men: Days Of Future Past"
@@ -426,7 +429,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/IRM3_IronMan3/IRM3_Poster1.jpg"
               alt="Iron Man 3"
@@ -439,7 +442,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/STID_StartTrekIntoDarkness/STID_Poster5.jpg"
               alt="Star Trek Into Darkness"
@@ -452,7 +455,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/RIPD_RIPD/RIPD_Poster3.jpg"
               alt="R.I.P.D."
@@ -466,7 +469,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/WWZ1_WorldWarZ/WWZ1_Poster1.jpg"
               alt="World War Z"
@@ -480,7 +483,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/BTMK_BeautyMark/BTMK_Poster1.jpg"
               alt="Beauty Mark"
@@ -494,7 +497,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/ZD30_ZeroDarkThirty/ZD30_Poster1.jpg"
               alt="Zero Dark Thirty"
@@ -507,7 +510,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/JCOM_JohnCarter/JCOM_Poster8.jpg"
               alt="John Carter"
@@ -520,7 +523,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/127H_127Hours/127H_Poster1.jpg"
               alt="127 hours"
@@ -534,7 +537,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/MARM_Marmaduke/MARM_Poster1.jpg"
               alt="Marmaduke"
@@ -547,7 +550,7 @@
             </div>
           </div>
 
-          <div class="project-item">
+          <div class="project-item comp">
             <img
               src="images/PROJECTS/RTRU_ReunitingTheRubins/RTRU_Poster1.jpeg"
               alt="Reuniting The Rubins"
@@ -659,15 +662,17 @@
                 href="https://www.linkedin.com/in/aymericperceval"
                 target="_blank"
                 class="social-link"
+                title="Visit my LinkedIn profile"
               >
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
               </a>
               <a
                 href="https://www.imdb.com/name/nm3698033/"
                 target="_blank"
                 class="social-link"
+                title="Visit my IMDb page"
               >
-                <i class="fab fa-imdb"></i>
+                <i class="fa-brands fa-imdb" style="font-size: 2rem"></i>
               </a>
             </div>
           </div>
